@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lalezar;
+}
+
+body{
+    background-image: url(../src/public/content/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+form{
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 1150px;
+    top: 150px;
+    border-radius: 20px;
+    padding: 200px;
+    height: 250px;
+    width: 200px;
+}
+
+form h1{
+    color: #DAC6EB;
+    font-size: 60px;
+    margin-top: -150px;
+    text-shadow: 0 0 5px #000;
+}
+
+form #ema{
+    color: #F679A2;
+    font-size: 30px;
+    margin-left: -120px;
+    position: absolute;
+    top: 200px;
+    text-shadow: 0 0 5px #000;
+}
+
+form #email{
+    background-color: #54688D;
+    border: 0px solid black;
+    position: absolute;
+    top: 250px;
+    width: 450px;
+    height: 40px;
+    margin-left: -120px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+form #pwd{
+    color: #F679A2;
+    font-size: 30px;
+    margin-left: -120px;
+    position: absolute;
+    top: 340px;
+    text-shadow: 0 0 5px #000;
+}
+
+form #pass{
+    background-color: #54688D;
+    border: 0px solid black;
+    position: absolute;
+    top: 400px;
+    width: 450px;
+    height: 40px;
+    margin-left: -120px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+form #SIN{
+    color: #54688D;
+    background-color: #DAC6EB;
+    position: absolute;
+    top: 500px;
+    font-size: 20px;
+    left: 350px;
+    padding: 7px;
+    width: 180px;
+    border-radius: 20px;
+    border: 0px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 0 0 2px #000;
+}
+
+
+form #SUP{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    padding: 7px;
+    width: 180px;
+    border-radius: 20px;
+    border: 0px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 20px;
+
+    text-shadow: 0 0 2px #000;
+}
+
+form #SUP a{
+    text-decoration: none;
+
+}
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+responsivity:
+
+@media (max-width: 768px) {
+
+    form {
+         /* Reduce padding for smaller screens */
+ 
+        height: 300px;
+        background-color:#020202e1;
+        width: 100px;
+        border-radius: 20px;
+        left: 0;
+    }
+
+    form h1 {
+        font-size: 35px; /* Adjust font size for smaller screens */  
+        text-align: center;
+    }
+
+    form #ema, form #pwd {
+        font-size: 25px; /* Adjust font size for labels */
+        position: absolute;
+        left: 170px;
+    }
+
+    form #email, form #pass {
+        width: 400px; /* Adjust font size for labels */
+        position: absolute;
+        left: 170px;
+    }
+
+    form #SIN {
+        width: 170px; /* Make buttons full width */
+        left: 75px;
+        transform: none;
+    }
+    form #SUP {
+        width: 170px; /* Make buttons full width */
+        left: 255px;
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 30px; /* Further reduce padding for very small screens */
+    }
+
+    form h1 {
+        font-size: 40px; /* Further adjust font size for very small screens */
+    }
+
+    form #ema, form #pwd {
+        font-size: 17px; /* Further adjust label font size */
+    }
+}
+
+
+-----------------------------------------
+burger menu with drop list:
+
+        /* Hamburger icon */
+        .menu-icon {
+            display: none;
+            position: absolute;
+            right: 0;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            right: 1px;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        /* Dropdown menu for smaller screens */
+
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+
+            .dropdown {
+                display: none;
+                flex-direction: column;
+                background-color: #7B4A72;
+                position: absolute;
+                top: 80px; /* Dropdown menu appears below the nav */
+                padding-top: 20px;
+                right: 0px;
+                width: 70px; /* Adjust the width as per your needs */
+                border-bottom-left-radius: 20px;
+            }
+
+            .dropdown a {
+                border-top: 1px solid #FE49DD;
+                width: 100px;
+            }
+
+            img{
+                position: absolute;
+                left: 0px; 
+                height: 180px;
+            }
+
+            nav{
+                height: 100px;
+                background-color: #7B4A72;
+            }
+
+            nav a {
+                display: none;
+                text-align: center;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .dropdown a {
+                display: block;
+            }
+
+            main h1{
+                position: absolute;
+                left: 170px;
+                width: 160px;
+                top: 270px;
+            }
+
+            main .Home p{
+                position: absolute;
+                top: 380px;
+                left: 95px;
+                width: 250px;
+            }
+        }
+
+        /* Show the dropdown when clicked */
+        .dropdown.active {
+            display: flex;
+        }

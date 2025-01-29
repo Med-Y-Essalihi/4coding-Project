@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lalezar;
+}
+
+body{
+    background-image: url(../src/public/content/img/bg6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 7%;
+}
+
+.dropdown{
+    background-color: #7B4A72;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .dropdown  a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0 0 8px #000;
+}
+
+nav .dropdown a:hover{
+  text-shadow: 0 0 16px #FE49DD;
+}
+
+
+
+img{
+    position: absolute;
+    left: 850px;
+    top: 10px;
+
+}
+
+main h1 {
+    position: absolute;
+    top: 270px;
+    left: 795px;
+    background-image: linear-gradient(to right, #7B4A72 , #BF7DB3 , #FE49DD);
+    width: 310px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #FF83B3;
+    text-decoration: underline solid white 4px ;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+main .home p{
+    width: 500px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 500px;
+    left: 670px;
+    color: white;
+    background-color: #fe49dd68;
+    border-radius: 20px;
+    box-shadow:  0 0 15px #FE49DD;
+    border: 0px solid;
+}
+
+        /* Hamburger icon */
+        .menu-icon {
+            display: none;
+            position: absolute;
+            right: 0;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            right: 1px;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        /* Dropdown menu for smaller screens */
+
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+
+            .dropdown {
+                display: none;
+                flex-direction: column;
+                background-color: #7B4A72;
+                position: absolute;
+                top: 80px; /* Dropdown menu appears below the nav */
+                padding-top: 20px;
+                right: 0px;
+                width: 70px; /* Adjust the width as per your needs */
+                border-bottom-left-radius: 20px;
+            }
+
+            .dropdown a {
+                border-top: 1px solid #FE49DD;
+                width: 100px;
+            }
+
+            img{
+                position: absolute;
+                left: 0px; 
+                height: 180px;
+            }
+
+            nav{
+                height: 100px;
+                background-color: #7B4A72;
+            }
+
+            nav a {
+                display: none;
+                text-align: center;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .dropdown a {
+                display: block;
+            }
+
+            main h1{
+                position: absolute;
+                left: 170px;
+                width: 160px;
+                top: 270px;
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            main .Home p{
+                position: absolute;
+                top: 380px;
+                left: 95px;
+                width: 250px;
+            }
+        }
+
+        /* Show the dropdown when clicked */
+        .dropdown.active {
+            display: flex;
+        }

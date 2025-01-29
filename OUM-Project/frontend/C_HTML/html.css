@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lalezar;
+}
+
+body{
+    background-image: url(../C_HTML/src/img/bg6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 7%;
+}
+
+.dropdown{
+    background-color: #7B4A72;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0 0 8px #000;
+}
+
+nav a:hover{
+  color: #FE49DD;
+}
+
+img{
+    position: absolute;
+    left: 850px;
+    top: 10px;
+}
+
+main h1 {
+    position: absolute;
+    top: 270px;
+    left: 795px;
+    background-image: linear-gradient(to right, #7B4A72 , #BF7DB3 , #FE49DD);
+    width: 310px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #FF83B3;
+    text-decoration: underline solid white 4px ;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+main .home p{
+    width: 500px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 500px;
+    left: 670px;
+    color: white;
+    background-color: #fe49dd68;
+    border-radius: 20px;
+    box-shadow:  0 0 15px #FE49DD;
+    border: 0px solid;
+}
+
+.C_Table_1{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 550px;
+    border: 4px solid #FF83B3;
+    border-radius: 25px;
+    border-bottom: 0px solid;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+.C_Table_1 button{
+    width: 80px;
+    height: 70px;
+    border: 0px solid;
+    border-right: 1px solid black;
+}
+
+.C_Table_1 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-shadow: 0 0 2px #000;
+}
+
+.C_Table_1 button:hover{
+    text-decoration: none;
+    background-color: #FE49DD;
+    height: 75px;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.C_Tbale2{
+    display: flex;
+    position: absolute;
+    top: 574px;
+    left: 550px;
+    border: 4px solid #FF83B3;
+    border-top: 1px solid black;
+    border-bottom: 0px solid;
+}
+
+.C_Tbale2 button{
+    width: 80px;
+    height: 70px;
+    border: 0px solid;
+    border-right: 1px solid black;
+}
+
+.C_Tbale2 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-shadow: 0 0 2px #000;
+}
+
+.C_Table2 button:hover{
+    text-decoration: none;
+    background-color: #FE49DD;
+    height: 75px;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.C_Tbale3{
+    display: flex;
+    position: absolute;
+    top: 644px;
+    left: 550px;
+    border: 4px solid #FF83B3;
+    border-top: 1px solid black;
+    border-bottom: 0px solid;
+}
+
+.C_Tbale3 button{
+    width: 80px;
+    height: 70px;
+    border: 0px solid;
+    border-right: 1px solid black;
+}
+
+.C_Tbale3 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-shadow: 0 0 2px #000;
+}
+
+.C_Table3 button:hover{
+    text-decoration: none;
+    background-color: #FE49DD;
+    height: 75px;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.C_Tbale4{
+    display: flex;
+    position: absolute;
+    top: 714px;
+    left: 550px;
+    border: 4px solid #FF83B3;
+    border-top: 1px solid black;
+    border-bottom: 4px solid #FF83B3;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.C_Tbale4 button{
+    width: 80px;
+    height: 70px;
+    border: 0px solid;
+    border-right: 1px solid black;
+}
+
+.C_Tbale4 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-shadow: 0 0 2px #000;
+}
+
+.C_Table4 button:hover{
+    text-decoration: none;
+    background-color: #FE49DD;
+    height: 75px;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+        /* Hamburger icon */
+        .menu-icon {
+            display: none;
+            position: absolute;
+            right: 0;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            right: 1px;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        /* Dropdown menu for smaller screens */
+
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+
+            .dropdown {
+                display: none;
+                flex-direction: column;
+                background-color: #7B4A72;
+                position: absolute;
+                top: 80px; /* Dropdown menu appears below the nav */
+                padding-top: 20px;
+                right: 0px;
+                width: 60px; /* Adjust the width as per your needs */
+                border-bottom-left-radius: 20px;
+            }
+
+            .dropdown a {
+                border-top: 1px solid #FE49DD;
+                width: 80px;
+            }
+
+            img{
+                position: absolute;
+                left: 0px; 
+                height: 180px;
+            }
+
+            nav{
+                height: 100px;
+                background-color: #7B4A72;
+            }
+
+            nav a {
+                display: none;
+                text-align: center;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .dropdown a {
+                display: block;
+            }
+
+            main h1{
+                position: absolute;
+                left: 135px;
+                width: 230px;
+                top: 350px;
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            main .C_Table_1{
+                position: absolute;
+                left: 50px;
+                width: 400px;
+            }
+            main .C_Tbale2{
+                position: absolute;
+                left: 50px;
+                width: 400px;
+            }
+            main .C_Tbale3{
+                position: absolute;
+                left: 50px;
+                width: 400px;
+            }
+            main .C_Tbale4{
+                position: absolute;
+                left: 50px;
+                width: 400px;
+            }
+        }
+
+        /* Show the dropdown when clicked */
+        .dropdown.active {
+            display: flex;
+        }

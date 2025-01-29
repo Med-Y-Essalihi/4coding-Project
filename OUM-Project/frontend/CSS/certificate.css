@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lalezar;
+}
+
+body{
+    background-image: url(../src/public/content/img/certifi_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 7%;
+}
+
+main img{
+    width: 1250px;
+    position: absolute;
+    top: 150px;
+    left: 330px;
+    border: 2px solid rgb(252, 133, 153);
+    border-radius: 20px;
+}
